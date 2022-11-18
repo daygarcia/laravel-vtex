@@ -1,0 +1,18 @@
+{
+    "name": "daygarcia/laravel-vtex",
+    "description": "A laravel package to help you to connect to VTEX API",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelVtex": "daygarcia/laravel-vtex/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dayanne Garcia",
+            "email": "48609156+DayGarcia@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
