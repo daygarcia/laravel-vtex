@@ -1,6 +1,6 @@
 <?php
 
-namespace DayGarcia\LaravelVtex;
+namespace LaravelVtex;
 
 use Illuminate\Support\ServiceProvider;
 
