@@ -43,8 +43,8 @@ class Api
     public function headers(Configuration $configuration)
     {
         return array_merge($this->headers, [
-            'x-vtex-api-appkey' => $configuration->getAppToken(),
-            'x-vtex-api-apptoken' => $configuration->getAppKey(),
+            'x-vtex-api-appkey' => $configuration->getAppKey(),
+            'x-vtex-api-apptoken' => $configuration->getAppToken(),
         ]);
     }
 }
