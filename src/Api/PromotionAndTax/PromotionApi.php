@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelVtex\Api;
+namespace LaravelVtex\Api\PromotionAndTax;
 
 use LaravelVtex\Api;
 use LaravelVtex\Configuration;
