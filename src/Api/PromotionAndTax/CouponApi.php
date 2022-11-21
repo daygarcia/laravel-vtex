@@ -5,7 +5,7 @@ namespace LaravelVtex\Api\PromotionAndTax;
 use LaravelVtex\Api;
 use LaravelVtex\Configuration;
 
-class PromotionApi extends Api
+class CouponApi extends Api
 {
     public function __construct(Configuration $configuration)
     {

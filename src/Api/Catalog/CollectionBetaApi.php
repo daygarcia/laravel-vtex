@@ -10,6 +10,7 @@ class CollectionBetaApi extends Api
     public function __construct(Configuration $configuration)
     {
         $this->configuration = $configuration;
+        parent::__construct();
     }
 
     public function getProductsFromACollection(string $id, string $page, string $page_size, string $filter, bool $active, bool $visible, int $category_id, int $brand_id, int $supplier_id, int $sales_channel_id, string $release_from, string $release_to, string $specification_product, int $specification_field_id)
