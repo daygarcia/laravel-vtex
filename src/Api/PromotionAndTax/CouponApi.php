@@ -13,9 +13,9 @@ class CouponApi extends Api
         parent::__construct();
     }
 
-    public function getAllPromotions()
+    public function getAllCoupons()
     {
-        $url = 'rnb/pvt/benefits/calculatorconfiguration';
+        $url = 'rnb/pvt/coupon';
         return $this->get($this->configuration, $url);
     }
 }
