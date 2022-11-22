@@ -9,7 +9,7 @@
  * @package  LaravelVtex\Model
  */
 
-namespace LaravelVtex\Model;
+namespace LaravelVtex\Models;
 
 use LaravelVtex\ObjectSerializer;
 

@@ -15,7 +15,7 @@
  * Do not edit the class manually.
  */
 
-namespace LaravelVtex\Model;
+namespace LaravelVtex\Models;
 
 /**
  * Interface abstracting model access.
