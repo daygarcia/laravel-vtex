@@ -2,7 +2,10 @@
 
 namespace Models\Catalog;
 
-class CollectionBeta
+use LaravelVtex\Model\BaseModel;
+use LaravelVtex\Model\ModelInterface;
+
+class GetProductsFromACollection extends BaseModel implements ModelInterface
 {
     private $container;
 
