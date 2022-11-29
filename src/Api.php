@@ -20,9 +20,9 @@ class Api
             : "https://" . config('vtex.store_name') . "." . config('vtex.env.prod') . ".com.br/api/";
     }
 
-    public function get(Configuration $configuration, string $url)
+    public function get(Configuration $configuration, string $url, array $params = [])
     {
-        return Http::withHeaders($this->headers($configuration))->get($this->url . $url)->object();
+        return Http::withHeaders($this->headers($configuration))->get($this->url . $url, $params)->object();
     }
 
     public function post(Configuration $configuration, string $url, $data)
