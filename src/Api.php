@@ -22,22 +22,28 @@ class Api
 
     public function get(Configuration $configuration, string $url, array $params = [])
     {
-        return Http::withHeaders($this->headers($configuration))->get($this->url . $url, $params)->object();
+        $response = Http::withHeaders($this->headers($configuration))->get($this->url . $url, $params)->json();
+
+        if ($response->failed()) {
+            return $response->throw();
+        }
+
+        return $response->json();
     }
 
     public function post(Configuration $configuration, string $url, $data)
     {
-        return Http::withHeaders($this->headers($configuration))->post($this->url . $url, $data)->object();
+        return Http::withHeaders($this->headers($configuration))->post($this->url . $url, $data)->json();
     }
 
     public function put(Configuration $configuration, string $url, $data)
     {
-        return Http::withHeaders($this->headers($configuration))->put($this->url . $url, $data)->object();
+        return Http::withHeaders($this->headers($configuration))->put($this->url . $url, $data)->json();
     }
 
     public function delete(Configuration $configuration, $url)
     {
-        return Http::withHeaders($this->headers($configuration))->delete($this->url . $url)->object();
+        return Http::withHeaders($this->headers($configuration))->delete($this->url . $url)->json();
     }
 
     public function headers(Configuration $configuration)
