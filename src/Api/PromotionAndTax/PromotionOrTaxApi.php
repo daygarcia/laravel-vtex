@@ -13,9 +13,9 @@ class PromotionOrTaxApi extends Api
         parent::__construct();
     }
 
-    public function getPromotionOrTaxById(int $id_calculator_configuration)
+    public function getPromotionOrTaxById(string $id_calculator_configuration)
     {
-        $url = "rnb/pvt/benefits/calculatorconfiguration/{$id_calculator_configuration}";
+        $url = "rnb/pvt/calculatorconfiguration/{$id_calculator_configuration}";
         return $this->get($this->configuration, $url);
     }
 }
