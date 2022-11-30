@@ -24,4 +24,10 @@ class PromotionOrTaxApi extends Api
         $url = "rnb/pvt/archive/calculatorConfiguration/{$id_calculator_configuration}";
         return $this->post($this->configuration, $url, []);
     }
+
+    public function createOrUpdatePromotionOrTax(array $data)
+    {
+        $url = 'rnb/pvt/calculatorconfiguration';
+        return $this->post($this->configuration, $url, $data);
+    }
 }
