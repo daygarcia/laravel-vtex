@@ -18,4 +18,10 @@ class CouponApi extends Api
         $url = 'rnb/pvt/coupon';
         return $this->get($this->configuration, $url);
     }
+
+    public function archiveCouponByCouponCode(string $coupon_code)
+    {
+        $url = "rnb/pvt/archive/coupon/{$coupon_code}";
+        return $this->post($this->configuration, $url, []);
+    }
 }
