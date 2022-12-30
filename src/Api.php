@@ -22,7 +22,7 @@ class Api
 
     public function get(Configuration $configuration, string $url, array $params = [])
     {
-        $response = Http::withHeaders($this->headers($configuration))->get($this->url . $url, $params)->json();
+        $response = Http::withHeaders($this->headers($configuration))->get($this->url . $url, $params);
 
         if ($response->failed()) {
             return $response->throw();
